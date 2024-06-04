@@ -1,0 +1,368 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/api/musicgenre",
+            "UpstreamHttpMethod": [ "GET", "POST" ],
+            "DownstreamPathTemplate": "/api/musicgenre",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "Musicgenre" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/musicgenre/{id}",
+            "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+            "DownstreamPathTemplate": "/api/musicgenre/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "Musicgenre" ]
+            }
+        },
+
+
+
+
+
+        {
+            "UpstreamPathTemplate": "/api/song",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/song",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "cliente_valido",
+                "Scopes": [ "Song" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/song",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/song",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "Song" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/song/{id}",
+            "UpstreamHttpMethod": [ "PUT", "DELETE" ],
+            "DownstreamPathTemplate": "/api/song/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "Song" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/song/{id}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/song/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "cliente_valido",
+                "Scopes": [ "Song" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/song/{id}/musicgenre",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/song/{id}/musicgenre",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "Song" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/song/{id}/musicgenre/{musicgenreid}",
+            "UpstreamHttpMethod": [ "DELETE" ],
+            "DownstreamPathTemplate": "/api/song/{id}/musicgenre/{musicgenreid}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "Song" ]
+            }
+        },
+
+
+
+
+
+
+        {
+            "UpstreamPathTemplate": "/api/user",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/user",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "User" ]
+            }
+        }, 
+        {
+            "UpstreamPathTemplate": "/api/user",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/user",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/api/user/{email}",
+            "UpstreamHttpMethod": [ "PUT", "DELETE" ],
+            "DownstreamPathTemplate": "/api/user/{email}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "User" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/user/{email}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/user/{email}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "cliente_valido",
+                "Scopes": [ "User" ]
+            }
+        },
+
+
+
+
+
+        {
+            "UpstreamPathTemplate": "/api/role",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/role",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ]
+        },
+
+
+
+
+
+
+        {
+            "UpstreamPathTemplate": "/api",
+            "UpstreamHttpMethod": [ "POST" ],
+            "DownstreamPathTemplate": "/api/auth",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/api/time",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/auth/time",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "cliente_valido",
+                "Scopes": [ "Auth" ]
+            }
+        },
+
+
+
+
+
+        {
+            "UpstreamPathTemplate": "/api/file",
+            "UpstreamHttpMethod": [ "GET", "POST" ],
+            "DownstreamPathTemplate": "/api/file",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "File" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/file/{id}",
+            "UpstreamHttpMethod": [ "PUT", "DELETE" ],
+            "DownstreamPathTemplate": "/api/file/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "File" ]
+            }
+        },
+        {
+            "UpstreamPathTemplate": "/api/file/{id}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/file/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/api/file/{id}/details",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/file/{id}/details",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "File" ]
+            }
+        },
+
+
+
+
+
+
+        {
+            "UpstreamPathTemplate": "/api/logbook",
+            "UpstreamHttpMethod": [ "GET" ],
+            "DownstreamPathTemplate": "/api/logbook",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3000
+                }
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "admin_valido",
+                "Scopes": [ "Logbook" ]
+            }
+        }
+    ],
+    
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5000",
+        "RateLimitOptions": {
+            "ClientWhitelist": [],
+            "EnableRateLimiting": true,
+            "Period": "1s",
+            "PeriodTimespan": 1,
+            "Limit": 100
+        }
+    }
+}
