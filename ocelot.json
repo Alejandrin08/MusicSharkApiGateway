@@ -311,7 +311,12 @@
                     "Host": "localhost",
                     "Port": 3000
                 }
-            ]
+            ],
+            "AuthorizationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "PolicyName": "usuario_valido",
+                "Scopes": [ "File" ]
+            }
         },
         {
             "UpstreamPathTemplate": "/api/file/{id}/details",
